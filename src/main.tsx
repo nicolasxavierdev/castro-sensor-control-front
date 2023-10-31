@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import { GlobalStyle } from './GlobalStyle'
+import Router from './routes/index.tsx'
+import { GlobalStyle } from './GlobalStyle.tsx'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <GlobalStyle />
-    <App />
+    <Router />
   </React.StrictMode>
 )
